@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PC Doctor</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/Logito.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top sticky-lg-top" id="navNormal">
+            <div class="container">
+                <div class="align-items-center nav-item col-5">
+                    <img src="assets/img/Logito.svg" width="30px" alt="">
+                    <a class="navbar-brand" href="#Principal">PC Doctor</a>
+                </div>
+                <div class="nav-item col-3 show" id="bts">
+                    <a class="btn btn-secondary" id="bt1" href="#Registro">Registro</a>
+                    <a class="btn btn-primary" id="bt2" href="#Inicio">Iniciar sesión</a>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-light bg-light static-top sticky-lg-top visually-hidden" id="navUsuario">
+            <div class="container">
+                <div class="align-items-center nav-item col-5">
+                    <img src="assets/img/Logito.svg" width="30px" alt="">
+                    <a class="navbar-brand" href="#Principal">PC Doctor</a>
+                </div>
+                <div class="nav-item col-6 show">
+                    <div class="bg-white row text-center align-self-center rounded-pill">
+                        <div class="bi-person-check col-2 text-primary text-center align-self-center features-icons-item"></div>
+                        <div class="col-5">
+                            <div>Bienvenido: <p class="text-primary" id="UnUsuario">Hola :)</p></div>
+                        </div>
+                        <div class="col-2">
+                            <div>ID: <p class="text-primary" id="UnID">0</p></div>
+                        </div>
+                        <div class="col-3">
+                            <Button id="Cerrar" class="btn btn-danger">Cerrar sesión</Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" id="Principal">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <h1>Tu computadora como si fuera el primer día.</h1>
+                            <h1 class="mb-5">Con PCDoctor!</h1>
+                            <!-- Signup form-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                            <!--<form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <!-- Email address input-->
+                                <!--<div class="row">
+                                    <div class="col">
+                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                                    </div>
+                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                </div>-->
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <!--<div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Form submission successful!</div>
+                                        <p>To activate this form, sign up at</p>
+                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    </div>
+                                </div>-->
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <!--<div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            </form>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Icons Grid-->
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-tools m-auto text-primary"></i></div>
+                            <h3>Dale mantenimiento a tu equipo</h3>
+                            <p class="lead mb-0">Podrás darle a tu equipo el mantenimiento que necesita cuando lo necesite</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-award m-auto text-primary"></i></div>
+                            <h3>Aprende a hacerlo tu mismo</h3>
+                            <p class="lead mb-0">Puedes tomar cursos proporcionados por nuestros colaboradores</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-camera-video m-auto text-primary"></i></div>
+                            <h3>Mantente informado</h3>
+                            <p class="lead mb-0">Sabrás qué le están haciendo a tu equipo en cada momento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image Showcases-->
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>¡¡Dale mantenimiento a tu equipo!!</h2>
+                        <p class="lead mb-0">Podrás tomar cursos para darle mantenimiento preventivo y correctivo a tu equipo, si no es lo tuyo también puedes contratar a uno de nuestros técnicos para darle el mantenimiento que necesites.</p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Prueba nuestros cursos.</h2>
+                        <p class="lead mb-0">Aquí tienes un pequeño vistazo a los cursos gratuitos que tenemos.</p>
+                        <a href="https://www.youtube.com/channel/UCJuqkAzNSiLF23IIm2FVL2Q" class="btn btn-primary">Cursos!!!</a>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>¿Quieres unirte a nuestro equipo?</h2>
+                        <p class="lead mb-0">Claro!!!, puedes ser parte de nuestros tecnicos y podras trabajar con nosotros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials-->
+        <section class="testimonials text-center bg-light">
+            <div class="container">
+                <h2 class="mb-5">Acerca de nosotros</h2>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
+                            <h5>Felix Garcia</h5>
+                            <p class="font-weight-light mb-0">Tester</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
+                            <h5>Frank Robles</h5>
+                            <p class="font-weight-light mb-0">Programador</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
+                            <h5>Erick Medina</h5>
+                            <p class="font-weight-light mb-0">Técnico</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-4.jpg" alt="..." />
+                            <h5>Christian Ayala</h5>
+                            <p class="font-weight-light mb-0">Técnico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action-->
+        <section class="call-to-action text-white text-center Esconder" id="InicioSec">
+            <div class="container position-relative"  id="Inicio">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <h2 class="mb-4" id="Titulo">¡Inicio de sesión!</h2>
+                        <!-- Signup form-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-inicio" id="Inicio" method="">
+                            <!-- Email address input-->
+                            <div class="container">
+                                <div class="col">
+                                    <input class="form-control form-control-lg mt-2 border-4" id="CorreoI" name="CorreoI" type="email" placeholder="Email" maxlength="35" />
+                                    <input class="form-control form-control-lg mt-4 border-4" id="ContraseñaI" name="ContraseñaI" type="password" placeholder="Contraseña" maxlength="20" />
+                                </div>
+                            </div>
+							<div class="container mt-4">
+							    <button class="btn btn-secondary btn-lg mx-2 btR" id="btR" >Registrame</button>
+							    <button class="btn btn-primary btn-lg mx-2" id="IniciaSesionVer" type="submit">Iniciar Sesión</button>
+                            </div>
+							<div id="Respuesta1" class="mt-3">
+                                <div class="visually-hidden" id="ErrorI1"><div class="text-center text-danger mb-3 fw-bold">Necesitas un Correo valido</div></div>
+                                <div class="visually-hidden" id="ErrorI2"><div class="text-center text-danger mb-3 fw-bold">Necesitas una contraseña valida</div></div>
+                                <div class="visually-hidden" id="ErrorI3"><div class="text-center text-danger mb-3 fw-bold">El correo o la contrasela no coinciden  </div></div>
+                                <div class="visually-hidden" id="ErrorI0"><div class="text-center text-danger mb-3 fw-bold">Ingresa datos en todos los campos</div></div>
+                                <div class="visually-hidden" id="SiInicio"><div class="text-center text-success mb-3 fw-bold">¡Inicio de sesión con éxito!</div></div>
+							</div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <!-- <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    <p>To activate this form, sign up at</p>
+                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>-->
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <!-- <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3"> nding message!</div></div>-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call-to-action text-white text-center Esconder visually-hidden" id="RegistroSec">
+            <div class="container position-relative"  id="Registro">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <h2 class="mb-4" id="Titulo">¡Regístrate!</h2>
+                        <!-- Signup form-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-inicio" id="Registro">
+                            <!-- Email address input-->
+                            <div class="container">
+                                <div class="col">
+                                    <input class="form-control form-control-lg mt-2 border-4" id="Nombre" name="Nombre" type="text" placeholder="Nombre" maxlength="25" />
+                                    <input class="form-control form-control-lg mt-4 border-4" id="Correo" name="Correo" type="email" placeholder="Email" maxlength="35" />
+                                    <input class="form-control form-control-lg mt-4 border-4" id="Contraseña" name="Contraseña" type="password" placeholder="Contraseña" maxlength="20" />
+                                    <input class="form-control form-control-lg mt-4 border-4" id="Concontraseña" name="Concontraseña" type="password" placeholder="Confirme su contraseña" maxlength="20" />
+                                </div>
+                            </div>
+                            <div class="container mt-4">
+                                <button class="btn btn-secondary btn-lg mx-2 btI" id="btI">Iniciar Sesión</button>
+                                <button class="btn btn-primary btn-lg mx-2" id="RegistrarVer">Registrame</button>
+                            </div>
+                            <div id="Respuesta2" class="mt-3">
+                                <div class="visually-hidden" id="ErrorN1"><div class="text-center text-danger mb-3 fw-bold">Necesitas un nombre</div></div>
+                                <div class="visually-hidden" id="ErrorC1"><div class="text-center text-danger mb-3 fw-bold">Necesitas un Correo</div></div>
+                                <div class="visually-hidden" id="ErrorC2"><div class="text-center text-danger mb-3 fw-bold">Necesitas un Correo valido</div></div>
+                                <div class="visually-hidden" id="ErrorCo1"><div class="text-center text-danger mb-3 fw-bold">Necesitas una contraseña</div></div>
+                                <div class="visually-hidden" id="ErrorCo2"><div class="text-center text-danger mb-3 fw-bold">Necesitas confirmar tu contraseña</div></div>
+                                <div class="visually-hidden" id="ErrorCo3"><div class="text-center text-danger mb-3 fw-bold">Las contraseñas no coinciden</div></div>
+                                <div class="visually-hidden" id="ErrorR0"><div class="text-center text-danger mb-3 fw-bold">Ingresa datos en todos los campos</div></div>
+                                <div class="visually-hidden" id="SiRegistro"><div class="text-center text-success mb-3 fw-bold">¡Registro con éxito!</div></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; PCDoctor 2022. Derechos reservados (tal vez).</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="https://www.facebook.com/"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="https://twitter.com/"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/"><i class="bi-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="./js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
